@@ -225,16 +225,14 @@
 			isa = PBXGroup;
 			children = (
 				2FAA150F230409FE0024C80C /* Box2D */,
+				2FAA1662230443830024C80C /* Supporting Files */,
+				2FAA16612304436B0024C80C /* LiquidFun */,
+				2FAA1660230443520024C80C /* Controller */,
+				2FAA165F2304434A0024C80C /* View */,
+				2FAA165E230443370024C80C /* Model */,
 				2FAA14FD2304095A0024C80C /* AppDelegate.swift */,
-				2FAA14FF2304095A0024C80C /* ViewController.swift */,
-				2FAA15012304095A0024C80C /* Main.storyboard */,
-				2FAA15042304095C0024C80C /* Assets.xcassets */,
-				2FAA15062304095C0024C80C /* LaunchScreen.storyboard */,
 				2FAA15092304095C0024C80C /* Info.plist */,
-				2FAA165823040A890024C80C /* LiquidFun.h */,
-				2FAA165923040A890024C80C /* LiquidFun.mm */,
-				2FAA165B23040AC70024C80C /* Bridging-Header.h */,
-				2FAA165C230423CF0024C80C /* Shaders.metal */,
+				2FAA15042304095C0024C80C /* Assets.xcassets */,
 			);
 			path = LiquidMetal;
 			sourceTree = "<group>";
@@ -419,6 +417,48 @@
 				2FAA15D0230409FE0024C80C /* b2CircleShape.h */,
 			);
 			path = Shapes;
+			sourceTree = "<group>";
+		};
+		2FAA165E230443370024C80C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FAA165F2304434A0024C80C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA15012304095A0024C80C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FAA1660230443520024C80C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA14FF2304095A0024C80C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FAA16612304436B0024C80C /* LiquidFun */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA165823040A890024C80C /* LiquidFun.h */,
+				2FAA165923040A890024C80C /* LiquidFun.mm */,
+				2FAA165B23040AC70024C80C /* Bridging-Header.h */,
+				2FAA165C230423CF0024C80C /* Shaders.metal */,
+			);
+			path = LiquidFun;
+			sourceTree = "<group>";
+		};
+		2FAA1662230443830024C80C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2FAA15062304095C0024C80C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -696,7 +736,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW8AD92FW4;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/LiquidMetal";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/LiquidMetal",
+					"$(SRCROOT/LiquidMetal/LiquidFun/Box2D",
+					"$(SRCROOT/LiquidMetal/LiquidFun",
+				);
 				INFOPLIST_FILE = LiquidMetal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -705,7 +749,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshitkamilmajewski.LiquidMetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LiquidMetal/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiquidMetal/LiquidFun/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -717,7 +761,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HW8AD92FW4;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/LiquidMetal";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/LiquidMetal",
+					"$(SRCROOT/LiquidMetal/LiquidFun/Box2D",
+					"$(SRCROOT/LiquidMetal/LiquidFun",
+				);
 				INFOPLIST_FILE = LiquidMetal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -726,7 +774,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.freshitkamilmajewski.LiquidMetal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LiquidMetal/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "LiquidMetal/LiquidFun/Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
